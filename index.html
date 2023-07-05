@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>Paneer Tikka Recipe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        h1 {text-align:center;
+            font-size: 70px;
+           }
+        h3 {
+            font-size: 40px;
+           }
+        
+        div.scroll-container {
+        background-color:gainsboro;
+        overflow: auto;
+        white-space: nowrap;
+         padding: 10px;
+        }
+        .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+div.scroll-container img {
+  padding: 10px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #060606;
+  background-color:darkgray;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color:darkgray;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #060606;
+  border-top: none;
+}
+
+footer {
+  text-align: right;
+  font-size: 20px;
+  font-style:Verdana; 
+  padding: 3px;
+  border: 1px solid #060606;
+  background-color:darkgray;
+  color: black;
+}
+    </style>
+    <body style="background-color:beige;">
+
+        <h1 style="font-family:Verdana"><b>Paneer Tikka</b></h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'Ingredients')">Ingredients</button>
+            <button class="tablinks" onclick="openCity(event, 'Process')">Process</button>  
+        </div><br><br><br>
+        
+        <div id="Home" class="tabcontent"></div>
+        <div class="scroll-container">
+            <img src="https://geekrobocook.com/wp-content/uploads/2021/03/6.-Paneer-Tikka.jpg" width="600" height="400">
+            <img src="https://c.ndtvimg.com/2023-01/ckgev0uo_paneer-tikka_625x300_16_January_23.jpg"  width="600" height="400">
+            <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Neha_Mathur/Achari_Paneer_Tikka_Recipe_Party_Food_400.jpg" width="600" height="400">
+            <img src="https://s01.sgp1.cdn.digitaloceanspaces.com/book/136679-cbdgkfkegx-1585831617.jpg" width="600" height="400">
+        </div><br><br><br>
+        
+        <div id="Ingredients" class="tabcontent">
+        <h3 style="font-family:Verdana">Ingredients</h3>
+        <br><br>
+        <img src="https://yellowchilis.com/wp-content/uploads/2022/01/paneer-tikka-ingredients.jpg" width="600" height="400" class="center" ><br><br>
+        <ul>
+            <li>Paneer</li>
+            <li>Green Capsicum</li>
+            <li>Red Capsicum</li>
+            <li>Curd</li>
+            <li>Onion</li>
+            <li>Tomato</li>
+            <li>Ginger Garlic Paste</li>
+            <li>Corn Flour</li>
+            <li>Cream</li>
+            <li>Coriander Leaves</li>
+            <li>Jeera</li>
+            <li>Red Chilly</li>
+            <li>Garam Masala </li>
+            <li>Haldi</li>
+            <li>Black Pepper</li>
+            <li>Jeera</li>
+            <li>Red Chilly</li>
+            <li>Garam Masala </li>
+            <li>Haldi</li>
+            <li>Black Pepper</li>
+            <li>Dhania Powder</li>
+            <li>Dry Mango Powder</li>
+            <li>Salt</li>
+            <li>Oil</li>
+            <li>Water</li>
+          </ul></div>
+
+        <div id="Process" class="tabcontent">
+        <h3 style="font-family:Verdana">Process</h3>
+        <ol>
+            <li><b>For marination</b><br>
+                In a bowl, add 1 tbsp Nestlé A+ Curd, 1/2 tsp red chilly powder, 1/2 tsp haldi, 1/2 tsp garam masala, 1/2 tsp black pepper powder, 1/2 tsp dhania powder, 1 tsp ginger garlic paste and 2 tsp oil. Mix well.</li><br>
+            <li>Now add 1/2 tsp salt and 1 tsp corn flour mixture, 20 ml water and mix into a smooth paste. Keep aside.</li><br>
+            <li><b>For tikka skewers</b><br>
+                Insert vegetables & paneer alternately on skewers, apply the marination well.</li><br>
+            <li>Roast till light brown or well cooked.</li><br>
+            <li><b>For gravy</b><br>
+                In a pan, heat 1 tsp oil. </li><br>
+            <li>To the pan, add 1/8 tsp jeera, 3 tbsp tomato puree and bring to a boil.</li><br>
+            <li>Now add 1 tsp ginger garlic paste, 1/2 tsp red chilly powder, 1/2 tsp haldi, 1/2 tsp garam masala, 1/2 tsp amchur, 1/2 tsp salt. Mix well.</li><br>
+            <li>Add 1 tbsp Nestlé A+ Curd, 50 ml water and the cooked tikkas.</li><br>
+            <li>Give it a good mix (Optional Garnish with cream and coriander leaves).
+                Serve hot with rotis.
+                </li>
+        </ol></div>
+
+
+        <script>
+            function openCity(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>
+        <footer text-align="right">
+            <b><p>Contact No. - 0123456789</p>
+            <p>Email id - <a href="foodieme@gmail.com">foodieme@gmail.com</a></p>
+        </b>
+        </footer>
+     </body>
+</html>
